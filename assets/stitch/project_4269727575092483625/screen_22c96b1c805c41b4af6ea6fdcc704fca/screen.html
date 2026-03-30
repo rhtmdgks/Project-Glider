@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadada",
+              "inverse-surface": "#303030",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container": "#eeeeee",
+              "surface-tint": "#2559bd",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#e2dfde",
+              "secondary": "#5f5e5e",
+              "surface-bright": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#b1c5ff",
+              "primary": "#00327d",
+              "on-tertiary-fixed": "#380d00",
+              "on-error": "#ffffff",
+              "inverse-primary": "#b1c5ff",
+              "surface-container-highest": "#e2e2e2",
+              "outline-variant": "#c3c6d5",
+              "inverse-on-surface": "#f1f1f1",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1b1b1b",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#001946",
+              "surface-variant": "#e2e2e2",
+              "on-surface-variant": "#434653",
+              "primary-fixed": "#dae2ff",
+              "on-primary-container": "#a5bdff",
+              "tertiary-fixed": "#ffdbcf",
+              "tertiary-container": "#8b2e01",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "tertiary": "#651f00",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1c1b1b",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "on-tertiary-container": "#ffaa8a",
+              "on-primary-fixed-variant": "#00419e",
+              "background": "#f9f9f9",
+              "surface": "#f9f9f9",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-tertiary-fixed-variant": "#802900",
+              "on-error-container": "#93000a",
+              "on-background": "#1b1b1b",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Pretendard", "sans-serif"],
+              "body": ["Pretendard", "sans-serif"],
+              "label": ["Pretendard", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/Paperlogy-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/Paperlogy-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Paperlogy', 'Pretendard', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen pb-32">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 z-50 w-full bg-[#f9f9f9] dark:bg-slate-950">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#0047ab]">arrow_back</span>
+</button>
+<h1 class="text-2xl font-bold tracking-tighter text-[#1b1b1b] uppercase">B Mart</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="사용자 프로필" class="w-full h-full object-cover" data-alt="Close-up studio portrait of a friendly professional man with clean lighting and neutral grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8VLFTG4aifQEaQjaCKBmDL8Y7M54RCAQTERq050pqnwN425wOfuIOlxgvgHmYxYt8A3hp-Jxz9oX0f0yDnTwrIKY0eFEoY6xITjcilTzXe1xg_pY0jOcsOkb4ZmmLU3ufC6zdGq97TYvSDKhc1909sIeN3xz0B7Oe-GprndRcl4VEwGtsXLqPZk6WgOPt9rtx74mfKfaX02HbIkeZlSLP3OuVd-k1Fop85NujwNzIFZfKNfn9ze5fghWcmdjUuleY5arfgTPkMIE"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-24">
+<!-- AI Concierge Voice Heading -->
+<section class="mb-12">
+<div class="inline-flex items-center gap-2 mb-4">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+<span class="text-on-surface-variant font-medium text-sm uppercase tracking-widest">보안 월렛</span>
+</div>
+<h2 class="text-4xl font-bold tracking-tight text-on-surface mb-4">저장된 결제 수단</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">원활한 결제를 위해 카드를 관리하세요. 귀하의 데이터는 암호화되어 최고의 보안 표준으로 보호됩니다.</p>
+</section>
+<!-- Cards Bento/Asymmetric Grid -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Card 1: Hyundai Card (Primary Style) -->
+<div class="group relative overflow-hidden bg-primary-container text-white p-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
+<div class="flex justify-between items-start mb-12">
+<div>
+<p class="text-xs font-semibold uppercase tracking-[0.2em] opacity-80 mb-1">별칭</p>
+<h3 class="text-xl font-bold tracking-tight">메인 쇼핑 카드</h3>
+</div>
+<span class="material-symbols-outlined text-3xl">contactless</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex gap-4 items-center">
+<span class="text-2xl tracking-[0.3em] font-medium opacity-60">•••• •••• ••••</span>
+<span class="text-2xl font-bold tracking-widest">8842</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<p class="text-[10px] font-semibold uppercase tracking-[0.2em] opacity-60 mb-1">카드사</p>
+<p class="text-sm font-bold tracking-tight">현대카드</p>
+</div>
+<div class="w-12 h-8 bg-white/20 backdrop-blur-md rounded-md flex items-center justify-center">
+<span class="text-[10px] font-black italic">VISA</span>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-colors"></div>
+</div>
+<!-- Card 2: Samsung Card (Secondary Style) -->
+<div class="group relative overflow-hidden bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:bg-white active:scale-[0.98] border border-outline-variant/15">
+<div class="flex justify-between items-start mb-12">
+<div>
+<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-[0.2em] mb-1">별칭</p>
+<h3 class="text-xl font-bold text-on-surface tracking-tight">개인 장보기용</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">security</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex gap-4 items-center">
+<span class="text-2xl tracking-[0.3em] font-medium text-on-surface/30">•••• •••• ••••</span>
+<span class="text-2xl font-bold text-on-surface tracking-widest">1029</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<p class="text-[10px] font-semibold text-on-surface-variant uppercase tracking-[0.2em] mb-1">카드사</p>
+<p class="text-sm font-bold text-on-surface tracking-tight">삼성카드</p>
+</div>
+<div class="w-12 h-8 bg-on-surface/5 rounded-md flex items-center justify-center">
+<span class="text-[10px] font-black italic text-on-surface/40 uppercase">Master</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Add New Card Action -->
+<button class="flex items-center justify-center gap-4 w-full p-8 border-2 border-dashed border-outline-variant/30 rounded-xl hover:border-primary-container/40 hover:bg-primary-container/5 transition-all group active:scale-[0.99]">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">add</span>
+</div>
+<span class="text-lg font-bold text-on-surface tracking-tight">새 결제 수단 추가</span>
+</button>
+</div>
+<!-- Security Badge -->
+<div class="mt-12 flex flex-col items-center justify-center text-center px-12 py-8 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary-container mb-2" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="text-sm font-bold text-on-surface mb-1 uppercase tracking-tighter">PCI DSS 준수</p>
+<p class="text-xs text-on-surface-variant leading-relaxed">귀하의 결제 정보는 업계 표준의 뱅킹 수준 암호화 기술을 사용하여 안전하게 저장됩니다.</p>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#f9f9f9]/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0px_-20px_40px_rgba(27,27,27,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] transition-all" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest mt-1">쇼핑</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] transition-all" href="#">
+<span class="material-symbols-outlined">mic_none</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest mt-1">어시스턴트</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] transition-all" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest mt-1">주문내역</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full p-3 min-w-[64px] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest mt-1">프로필</span>
+</a>
+</nav>
+</body></html>

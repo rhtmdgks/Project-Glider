@@ -1,0 +1,80 @@
+{
+  "fetchedAt": "2026-03-29T12:53:18.319978+00:00",
+  "screens": [
+    {
+      "id": "08c9d79cfcd04641b3ef12b0a0490256",
+      "title": "환영합니다 / 로그인",
+      "ok": true
+    },
+    {
+      "id": "0c2c6b3280b246a8ae91c5b373e1244b",
+      "title": "구매 확인 및 결제",
+      "ok": true
+    },
+    {
+      "id": "c61eb8e77a22494eafdd8abaae6e596d",
+      "title": "구매 내역",
+      "ok": true
+    },
+    {
+      "id": "b61021e6fe494e17a46a30c8f587249a",
+      "title": "프로필 및 설정",
+      "ok": true
+    },
+    {
+      "id": "40ac569ddb67498bae00ec4e40623755",
+      "title": "접근성 설정",
+      "ok": true
+    },
+    {
+      "id": "5b2961d7013446d9b70daf2843692416",
+      "title": "결제 완료",
+      "ok": true
+    },
+    {
+      "id": "4181a351d3794cb8810098cf663f914e",
+      "title": "온보딩: 음성 쇼핑 시작하기",
+      "ok": true
+    },
+    {
+      "id": "804d4803bd99482694bf890d8d50e967",
+      "title": "AI 대화 기록",
+      "ok": true
+    },
+    {
+      "id": "674b2041ce09458aa4343baf8729ddff",
+      "title": "권한 설정: 마이크 및 알림",
+      "ok": true
+    },
+    {
+      "id": "0604723a9e2844159d4e2e12ece6238c",
+      "title": "배송 조회",
+      "ok": true
+    },
+    {
+      "id": "0b4101a8402f4bdb9061956465884e6c",
+      "title": "설정 및 관리",
+      "ok": true
+    },
+    {
+      "id": "b30e554a177d49a9a4112a777e5b69d2",
+      "title": "주문 상세 정보",
+      "ok": true
+    },
+    {
+      "id": "3ec9e257a4e146238d6352036ca220fd",
+      "title": "프로필 설정 완료",
+      "ok": true
+    },
+    {
+      "id": "22c96b1c805c41b4af6ea6fdcc704fca",
+      "title": "결제 수단 관리",
+      "ok": true
+    },
+    {
+      "id": "59290315000a472790e308946439c558",
+      "title": "홈 / 음성 어시스턴트",
+      "ok": true
+    }
+  ]
+}

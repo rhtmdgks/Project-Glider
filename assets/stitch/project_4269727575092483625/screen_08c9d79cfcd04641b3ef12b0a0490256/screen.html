@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Curator - Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f9f9f9",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-fixed": "#ffdbcf",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-container": "#a5bdff",
+              "secondary": "#5f5e5e",
+              "on-background": "#1b1b1b",
+              "tertiary": "#651f00",
+              "on-primary-fixed-variant": "#00419e",
+              "primary-fixed": "#dae2ff",
+              "tertiary-container": "#8b2e01",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#802900",
+              "primary": "#00327d",
+              "on-surface-variant": "#434653",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-container": "#e2dfde",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#b1c5ff",
+              "on-surface": "#1b1b1b",
+              "surface-tint": "#2559bd",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffaa8a",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed": "#001946",
+              "inverse-surface": "#303030",
+              "outline-variant": "#c3c6d5",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474746",
+              "on-tertiary-fixed": "#380d00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col items-center justify-center p-6 selection:bg-primary-container selection:text-white">
+<!-- Hero Visual Section -->
+<div class="w-full max-w-md mb-12 relative">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden shadow-sm bg-surface-container-low relative">
+<img alt="Abstract AI visualization" class="w-full h-full object-cover" data-alt="Minimalist abstract digital art showing soft flowing blue silk-like waves against a pure white background, high-end editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBukex0ywLvJ9EPZyo227T98PKbmtuUXQuk_ranitqNSJ7--v1seK0U3P_0nSt7bVuFFKvFMLSmGgvnQ_6A7M2k30xmut_NXgi7Z8dsFB879zI8qmHGoC6h5L_apmpKstzhrmxsPq902EPiXpsM3zk-AJrMfNrzizCpmn0rEMlJN6_eJNwx5DFpy8qrSGKdKiqNAU65HAODRZaUtqkch_uhHzP3ZdbRrkaaT3KPkEs2by-GDBcMPxGGubE88J5vs3RlLN7YCL8B0gI"/>
+<!-- Glassmorphism Overlay Card -->
+<div class="absolute bottom-6 left-6 right-6 p-6 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl border border-outline-variant/15">
+<span class="text-primary-container font-extrabold tracking-tighter text-2xl">The Curator</span>
+<p class="mt-2 text-on-surface-variant font-medium leading-relaxed">
+                    Your personal AI purchase concierge. Refining the way you discover and acquire.
+                </p>
+</div>
+</div>
+</div>
+<!-- Login/Welcome Container -->
+<div class="w-full max-w-md flex flex-col space-y-8">
+<!-- Header Text -->
+<div class="text-center space-y-2">
+<h1 class="text-3xl font-bold tracking-tight text-on-surface">Welcome back</h1>
+<p class="text-on-surface-variant text-base">Select your preferred way to continue</p>
+</div>
+<!-- Auth Actions Grid -->
+<div class="flex flex-col space-y-3">
+<!-- Primary CTA: Phone -->
+<button class="group flex items-center justify-between w-full h-16 px-6 rounded-full bg-primary-container text-white active:scale-95 transition-all duration-200">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-2xl" data-icon="smartphone">smartphone</span>
+<span class="font-semibold text-lg">Continue with Phone</span>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Secondary Actions: Glass/Matte Style -->
+<div class="grid grid-cols-2 gap-3">
+<button class="flex flex-col items-center justify-center h-28 p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-3xl mb-2 text-on-surface-variant" data-icon="mail">mail</span>
+<span class="text-sm font-semibold tracking-wide">Email</span>
+</button>
+<button class="flex flex-col items-center justify-center h-28 p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-3xl mb-2 text-on-surface-variant" data-icon="account_circle">account_circle</span>
+<span class="text-sm font-semibold tracking-wide">Social</span>
+</button>
+</div>
+</div>
+<!-- Asymmetric Conversational Note -->
+<div class="mt-4 px-2">
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-lg" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    By continuing, you agree to our <a class="text-primary-container font-bold hover:underline" href="#">Terms of Service</a> and <a class="text-primary-container font-bold hover:underline" href="#">Privacy Policy</a>. We value your data as much as your taste.
+                </p>
+</div>
+</div>
+<!-- Footer / Help -->
+<div class="pt-8 text-center">
+<button class="text-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary-container transition-colors">
+                Need help with your account?
+            </button>
+</div>
+</div>
+<!-- Background Decorative Elements -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
+<div class="absolute -top-[10%] -right-[5%] w-[40%] h-[40%] bg-primary-container/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[5%] -left-[10%] w-[50%] h-[50%] bg-surface-container-highest/30 rounded-full blur-[100px]"></div>
+</div>
+</body></html>

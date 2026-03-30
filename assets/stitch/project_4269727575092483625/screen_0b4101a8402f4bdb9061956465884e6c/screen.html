@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings | The Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f9f9f9",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-fixed": "#ffdbcf",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-container": "#a5bdff",
+              "secondary": "#5f5e5e",
+              "on-background": "#1b1b1b",
+              "tertiary": "#651f00",
+              "on-primary-fixed-variant": "#00419e",
+              "primary-fixed": "#dae2ff",
+              "tertiary-container": "#8b2e01",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#802900",
+              "primary": "#00327d",
+              "on-surface-variant": "#434653",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-container": "#e2dfde",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#b1c5ff",
+              "on-surface": "#1b1b1b",
+              "surface-tint": "#2559bd",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffaa8a",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed": "#001946",
+              "inverse-surface": "#303030",
+              "outline-variant": "#c3c6d5",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474746",
+              "on-tertiary-fixed": "#380d00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 h-16 bg-[#f9f9f9] dark:bg-[#1b1b1b]">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#f3f3f3] transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#0047ab]" data-icon="menu">menu</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-black text-xl tracking-tighter text-[#1b1b1b] dark:text-[#f9f9f9]">The Curator</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional woman with a friendly expression in a modern office with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGyZjc8oHN7YVsy3agLTXEHpuT_o2KUxFaK6mBMmttKc2hDQjiZ_bZOUx012JqhBtS1kFZnzS4byE-snT53oQCljW4yYU7P7JdZ8LxSJETueTbRL1wZdHcaLCg9-5td6CQgnYArCzbh4ITkIjk1IrBE-llgcEHq76HDPwk1e8C5TH_XGWUiiVlR0RzvrxcFAmnO-P37ybJggEPv5isNNE6Bm_A8XUk00mC-EaLfh2Dn4C9SeJenTHpKlkQuHmnKm_GnqHTFxlykpQ"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Profile Section -->
+<section class="flex flex-col items-center text-center space-y-4">
+<div class="relative">
+<div class="w-24 h-24 rounded-xl overflow-hidden shadow-sm">
+<img alt="Alex Curator" class="w-full h-full object-cover" data-alt="close-up portrait of a professional woman with a friendly expression in a modern office with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeNfEBiuTwmRp7p72hqL4ww8imNdko9C9GZhoa9GNuJ2mIMnExYHLfFSA8bypbul9LkJYKtBNJAEvKmpB-cYi-ZFudnJcc5t5V7y2EwfdWIAZzRuNRJPTkVxFT5X77iqnP3bq_zGktsXz_Tce3HhMhPQHBr9-42P7d6bgfgyiE8c5TLxyl4WrJykdrWPBOwuyJys3bVmwJRzvauObzOqs4JocDeXe8MhlIBCrUF02wqlCNq3X3xRo6KSrUwy2gbXL_2Z4sgBQ2Bto"/>
+</div>
+<button class="absolute -bottom-2 -right-2 bg-primary-container text-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg border-4 border-surface">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</button>
+</div>
+<div>
+<h2 class="text-2xl font-bold tracking-tight">Alex Curator</h2>
+<p class="text-on-surface-variant text-sm font-medium">Premium Member since 2023</p>
+</div>
+</section>
+<!-- Settings Groups -->
+<div class="space-y-2">
+<!-- Account Group -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="px-6 py-4">
+<h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant opacity-70">Account &amp; Identity</h3>
+</div>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</div>
+<div>
+<p class="font-semibold text-base">Account Settings</p>
+<p class="text-xs text-on-surface-variant">Email, Password, Personal Info</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-semibold text-base">Address Management</p>
+<p class="text-xs text-on-surface-variant">Default and secondary shipping</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<!-- Financial Group -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="px-6 py-4">
+<h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant opacity-70">Billing &amp; Wallet</h3>
+</div>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<div>
+<p class="font-semibold text-base">Payment Methods</p>
+<p class="text-xs text-on-surface-variant">Apple Pay, Cards, Bank Accounts</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<!-- AI & Voice Group -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="px-6 py-4">
+<h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant opacity-70">The Curator Interface</h3>
+</div>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="settings_voice">settings_voice</span>
+</div>
+<div>
+<p class="font-semibold text-base">Voice Interaction</p>
+<p class="text-xs text-on-surface-variant">Tone, Speed, Wake Words</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</div>
+<div>
+<p class="font-semibold text-base">Notification Settings</p>
+<p class="text-xs text-on-surface-variant">Order updates, Smart suggestions</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/10 text-primary-container text-[10px] font-bold">SMART ON</span>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<div>
+<p class="font-semibold text-base">Accessibility</p>
+<p class="text-xs text-on-surface-variant">Screen reading, Text scaling</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<!-- Security Group -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="px-6 py-4">
+<h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant opacity-70">Trust &amp; Transparency</h3>
+</div>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<p class="font-semibold text-base">Privacy &amp; Security</p>
+<p class="text-xs text-on-surface-variant">Encryption, Data usage, Biometrics</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-6 py-5 bg-surface-container-lowest hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</div>
+<div>
+<p class="font-semibold text-base">Help Center</p>
+<p class="text-xs text-on-surface-variant">FAQs, Support Tickets, Chat</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Logout Action -->
+<button class="w-full py-5 rounded-xl border border-outline-variant/20 text-error font-bold flex items-center justify-center gap-2 hover:bg-error/5 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+            Log Out of Account
+        </button>
+<!-- Version Info -->
+<p class="text-center text-[10px] text-on-surface-variant opacity-50 uppercase tracking-widest pb-12">v1.0.4 • The Curator AI Ecosystem</p>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#f9f9f9]/80 dark:bg-[#1b1b1b]/80 backdrop-blur-xl border-t border-[#c3c6d5]/15 shadow-[0px_-20px_40px_rgba(27,27,27,0.04)] rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-[#a0a0a0] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="keyboard_voice">keyboard_voice</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-[#a0a0a0] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="local_mall">local_mall</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-[#a0a0a0] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Profile</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full w-14 h-14 mb-2 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="sr-only">Settings</span>
+</a>
+</nav>
+</body></html>

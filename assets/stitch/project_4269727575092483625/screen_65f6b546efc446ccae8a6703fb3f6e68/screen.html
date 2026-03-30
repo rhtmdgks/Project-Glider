@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-on-surface": "#f1f1f1",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1b1b",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "primary": "#00327d",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c6d5",
+                        "outline": "#737784",
+                        "surface-variant": "#e2e2e2",
+                        "surface-tint": "#2559bd",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "background": "#f9f9f9",
+                        "secondary": "#5f5e5e",
+                        "on-tertiary-container": "#ffaa8a",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#8b2e01",
+                        "inverse-primary": "#b1c5ff",
+                        "tertiary-fixed": "#ffdbcf",
+                        "tertiary": "#651f00",
+                        "primary-fixed": "#dae2ff",
+                        "on-primary-fixed-variant": "#00419e",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#380d00",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#a5bdff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "primary-container": "#0047ab",
+                        "on-secondary-container": "#636262",
+                        "on-background": "#1b1b1b",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#802900",
+                        "inverse-surface": "#303030",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-fixed": "#001946",
+                        "on-surface-variant": "#434653",
+                        "secondary-container": "#e2dfde"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .voice-blob {
+            background: radial-gradient(circle at 30% 30%, #ffffff 0%, #f3f3f3 45%, #dae2ff 100%);
+            box-shadow: 0 10px 40px rgba(0, 71, 171, 0.08);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-surface antialiased overflow-x-hidden pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-[#f9f9f9] dark:bg-zinc-950 flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#434653] hover:opacity-80 transition-opacity active:scale-95 duration-200">menu</span>
+<img alt="B Mart" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhzzlSAVJSqxZAfx6hKlZmKJs4yIdn8O5n8hUiS66I9C_N97iu_OX2HTccCE0gweH7zyn90ZUHq6UJZZ8kyN-i31HpKcJuoALtM9Xl5nti47_ULFVWe0qgktbL34yEwcmowDpfK1ULU6slp2SEqedoE28NylDSb0STDiEZRTHq8PJwWRdSpdgm6QVhZ5PbvVqo6jkwoMLD89_4C3QVSbNrkFuaYP3nI-wM7mZEf2-AKl7Epem6SAis8dkbw-4t17onVq_RBfPyP_A"/>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a friendly professional man with a neutral background, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCvewiYJ3MIrEIoWG0eGUvHZimSsWMj1weg-_RK_UBA64g3pj9Hhh_XodSMuP0_sO3H_YxsAdEB8tyTVyNuRw0vVk6b7xs6UzPLJx31fglCvMIZRUg6Kvig-h0YOBatAN3Jk0ggnJQi-XQ-shLJU7Z9sgzu69IPYv4VL1UUByZLZlAhOGTT-Dsm1DHmwqEfZwUtGkE1bvHa2EldZDyG_wOdFoCNvoQQeQBL8-2DerQMmJITcQ42mdHSrKAA_COW3b3s9MIv7C4848"/>
+</div>
+</header>
+<main class="max-w-md mx-auto px-6 pt-4 space-y-10">
+<!-- Voice Hero Area -->
+<section class="flex flex-col items-center justify-center py-8">
+<div class="voice-blob w-48 h-48 rounded-full flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full border-4 border-primary-container opacity-20 scale-110"></div>
+<div class="bg-primary-container p-5 rounded-full shadow-lg shadow-blue-900/20">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+</div>
+<div class="mt-8 text-center space-y-2">
+<span class="text-primary-container font-semibold tracking-widest text-xs uppercase">AI Purchase Assistant</span>
+<h2 class="text-2xl font-bold tracking-tight">Processing Payment</h2>
+</div>
+</section>
+<!-- Conversation UI -->
+<section class="space-y-6">
+<!-- User Message -->
+<div class="flex flex-col items-end pl-12">
+<div class="bg-surface-container-highest text-on-surface px-6 py-4 rounded-t-xl rounded-bl-xl text-lg leading-relaxed shadow-sm">
+                    "B마트에서 저번에 구매했던 애플망고 사줘."
+                </div>
+</div>
+<!-- Micro-status -->
+<div class="flex items-center justify-center gap-2">
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+<span class="text-on-surface-variant text-[11px] font-medium tracking-wide">애플망고 검색 완료.</span>
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+</div>
+<!-- AI Response -->
+<div class="flex flex-col items-start pr-12">
+<div class="bg-surface-container-lowest border border-outline-variant/15 text-on-surface px-6 py-4 rounded-t-xl rounded-br-xl text-lg leading-relaxed shadow-[0px_2px_10px_rgba(0,0,0,0.02)]">
+                    "네, B마트에서 지난 3월 10일에 구매했던 애플망고를 확인했어요. 현재 충분히 재고가 남아 있습니다. 지금 주문하면 오후 7시 전에 도착 예정입니다. 구매하시겠습니까?"
+                </div>
+</div>
+<!-- User Message 2 -->
+<div class="flex flex-col items-end pl-12">
+<div class="bg-surface-container-highest text-on-surface px-6 py-4 rounded-t-xl rounded-bl-xl text-lg leading-relaxed shadow-sm">
+                    "구매해줘."
+                </div>
+</div>
+<!-- AI Final Confirmation -->
+<div class="flex flex-col items-start pr-12">
+<div class="bg-primary-container text-white px-6 py-4 rounded-t-xl rounded-br-xl text-lg leading-relaxed shadow-lg shadow-blue-900/10">
+                    "현대카드로 애플망고 결제를 완료했습니다."
+                </div>
+<div class="mt-2 flex items-center gap-1 px-1">
+<span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-primary-container text-[11px] font-bold uppercase tracking-wider">결제 완료</span>
+</div>
+</div>
+</section>
+<!-- Product Summary Card (Asymmetric Layout) -->
+<section class="relative pt-4">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/15 overflow-hidden">
+<div class="flex gap-6">
+<div class="w-32 h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface">
+<img alt="애플망고" class="w-full h-full object-cover" data-alt="Two ripe yellow-red apple mangoes on a clean white surface with soft morning light and vibrant colors" src="https://lh3.googleusercontent.com/aida/ADBb0uj5JjezKF7rjIhAN7u-jsLi2bqmU-LDXeMMI6ia9_EJ9Rv6ZydqiItEOVjL9Uw4i3pstymy8IDgHsNpvG6gE8-Heh8hMQNHdAHKRVMlpO9TpmICrPtR97vmvcTQwU6Vw4Tijr09ExbW4jilxP3R3knialNWc8PW25GfIuK2j-v_u2yjgLVYIp92cZinC-ifwrKbPeX2RgEij2fj9olMousuBkMCYiKkI-8chWscngHdLyTQ9aNDXPeK-gFtPVRh_P_dspP9qBPrUQ"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<span class="text-primary-container text-[10px] font-bold tracking-widest uppercase">Premium Fruit</span>
+<h3 class="text-xl font-bold mt-1">애플망고 2입</h3>
+<p class="text-on-surface-variant text-sm"><img alt="B Mart" class="h-4 w-auto object-contain inline-block align-middle mr-1" src="https://lh3.googleusercontent.com/aida/ADBb0uhzzlSAVJSqxZAfx6hKlZmKJs4yIdn8O5n8hUiS66I9C_N97iu_OX2HTccCE0gweH7zyn90ZUHq6UJZZ8kyN-i31HpKcJuoALtM9Xl5nti47_ULFVWe0qgktbL34yEwcmowDpfK1ULU6slp2SEqedoE28NylDSb0STDiEZRTHq8PJwWRdSpdgm6QVhZ5PbvVqo6jkwoMLD89_4C3QVSbNrkFuaYP3nI-wM7mZEf2-AKl7Epem6SAis8dkbw-4t17onVq_RBfPyP_A"/> • 강남점</p>
+</div>
+<div class="bg-primary-container/5 px-3 py-1 rounded-full self-start">
+<span class="text-primary-container text-xs font-bold">재고 충분</span>
+</div>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-y-6 gap-x-4 border-t border-outline-variant/20 pt-6">
+<div>
+<p class="text-on-surface-variant text-[11px] font-semibold uppercase tracking-wider">지난 구매</p>
+<p class="text-on-surface font-medium mt-1">3월 10일</p>
+</div>
+<div>
+<p class="text-on-surface-variant text-[11px] font-semibold uppercase tracking-wider">도착 예정</p>
+<p class="text-on-surface font-medium mt-1">오늘 오후 7시 전</p>
+</div>
+<div>
+<p class="text-on-surface-variant text-[11px] font-semibold uppercase tracking-wider">결제 수단</p>
+<p class="text-on-surface font-medium mt-1">현대카드 (**** 1234)</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xs" style="font-variation-settings: 'FILL' 1;">receipt</span>
+</div>
+<span class="text-primary-container font-bold text-sm tracking-tight">결제 완료</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Shared Component) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end px-8 pb-6 pt-2 bg-[#f9f9f9]/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0px_-20px_40px_rgba(27,27,27,0.04)] z-50 rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-zinc-400 p-2 hover:text-[#1b1b1b] dark:hover:text-white transition-colors active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full p-4 scale-110 -translate-y-4 shadow-lg shadow-blue-900/20 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Assistant</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-zinc-400 p-2 hover:text-[#1b1b1b] dark:hover:text-white transition-colors active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-zinc-400 p-2 hover:text-[#1b1b1b] dark:hover:text-white transition-colors active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Cart</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accessibility Settings - The Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f9f9f9",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-fixed": "#ffdbcf",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-container": "#a5bdff",
+              "secondary": "#5f5e5e",
+              "on-background": "#1b1b1b",
+              "tertiary": "#651f00",
+              "on-primary-fixed-variant": "#00419e",
+              "primary-fixed": "#dae2ff",
+              "tertiary-container": "#8b2e01",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#802900",
+              "primary": "#00327d",
+              "on-surface-variant": "#434653",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-container": "#e2dfde",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#b1c5ff",
+              "on-surface": "#1b1b1b",
+              "surface-tint": "#2559bd",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffaa8a",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed": "#001946",
+              "inverse-surface": "#303030",
+              "outline-variant": "#c3c6d5",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474746",
+              "on-tertiary-fixed": "#380d00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 h-16 bg-[#f9f9f9] dark:bg-[#1b1b1b]">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-[#f3f3f3] dark:hover:bg-[#252525] transition-colors rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#0047ab]">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#1b1b1b] dark:text-[#f9f9f9]">Accessibility</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-white">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="portrait of a professional man with a friendly expression in clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC20KJumx3PODEGyOy1RbdCcpYXd-xcodIkUuG5zmfN9HZ2T_6D2kOoZcBO6zk9pvElZcOAO8H7arFTez98OX0h23AnPXH4popGxFORCG3k6g662JWItNjZCwoD_K3y2dOBZyzOuNyQLAJgNOtSY_DYGgTNCl2Tmrz-B-N7SMaXKSjecF_RlzFodhhtJWeIJ1UB4phBxNpay1zd2haN6DZXSwZC3mLH7nDN7X1UyvjMMXz88HMSciL29apl_pbDqWp4eULsk8DxZBA"/>
+</div>
+</header>
+<main class="mt-20 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Introduction / Editorial Header -->
+<section class="space-y-2">
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Tailor your experience</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">Adjust how The Curator interacts with you to ensure a comfortable and accessible journey.</p>
+</section>
+<!-- Bento-style Accessibility Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Voice Response Speed Card (Large/Primary) -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(27,27,27,0.04)] space-y-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">keyboard_voice</span>
+</div>
+<div>
+<h3 class="font-bold text-xl">Voice Response Speed</h3>
+<p class="text-sm text-on-surface-variant">Adjust the pace of AI narration</p>
+</div>
+</div>
+<span class="text-primary font-bold text-lg">1.0x</span>
+</div>
+<div class="relative w-full h-12 flex items-center">
+<div class="absolute w-full h-2 bg-surface-container rounded-full"></div>
+<div class="absolute w-1/2 h-2 bg-primary-container rounded-full"></div>
+<div class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-white border-4 border-primary-container rounded-full shadow-md cursor-pointer"></div>
+</div>
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+<span>Slower</span>
+<span>Default</span>
+<span>Faster</span>
+</div>
+</div>
+<!-- Text Size Card -->
+<div class="bg-surface-container-low p-6 rounded-xl space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">format_size</span>
+<h3 class="font-bold">Visual Comfort</h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+<span class="text-sm font-medium">Larger Text</span>
+<div class="w-12 h-6 bg-primary-container rounded-full relative p-1 cursor-pointer">
+<div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+<span class="text-sm font-medium">High Contrast</span>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full relative p-1 cursor-pointer">
+<div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Motion Card -->
+<div class="bg-surface-container-low p-6 rounded-xl space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">motion_photos_off</span>
+<h3 class="font-bold">Interaction</h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+<span class="text-sm font-medium">Reduced Motion</span>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full relative p-1 cursor-pointer">
+<div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+<span class="text-sm font-medium">Haptic Feedback</span>
+<div class="w-12 h-6 bg-primary-container rounded-full relative p-1 cursor-pointer">
+<div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Summary Mode (Asymmetric/Highlighted) -->
+<div class="md:col-span-2 relative overflow-hidden bg-primary-container text-white p-8 rounded-xl shadow-lg">
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="max-w-md">
+<h3 class="font-bold text-2xl mb-2">Simplified Checkout</h3>
+<p class="text-blue-100/80 leading-relaxed">Removes visual noise and focuses only on essential order details and large action buttons.</p>
+</div>
+<button class="bg-white text-primary px-8 py-4 rounded-full font-bold shadow-xl active:scale-95 transition-all">
+                        Enable Mode
+                    </button>
+</div>
+<!-- Abstract Glass Background Decoration -->
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+</div>
+<!-- Visual Aids Section -->
+<div class="md:col-span-2 mt-4">
+<h4 class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-4 px-2">Support Tools</h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="flex flex-col items-center justify-center p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors text-center gap-3">
+<span class="material-symbols-outlined text-primary scale-125">closed_caption</span>
+<span class="text-sm font-semibold">Live Captions</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors text-center gap-3">
+<span class="material-symbols-outlined text-primary scale-125">visibility</span>
+<span class="text-sm font-semibold">Screen Reader</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors text-center gap-3">
+<span class="material-symbols-outlined text-primary scale-125">sign_language</span>
+<span class="text-sm font-semibold">ASL Support</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Guided Help Footer -->
+<div class="bg-surface-container-lowest border border-outline-variant/15 p-6 rounded-xl flex items-center gap-6">
+<div class="hidden sm:block w-16 h-16 rounded-full bg-surface-container flex-shrink-0">
+<img alt="Concierge Assistant" class="w-full h-full object-cover rounded-full" data-alt="close-up of a smiling customer support representative with a headset in soft-focus office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoXqyRXIWzjfsRUC5oaTNTxC2XtXqjrdnqhRus_iHNknfAosMhb4xCKsvPZi096Y4nuMYu4ccAFufo8qUQtQJYUldK5FwqgWqk91b6HS2hoimnJe_hE6gYuLGftlZF0SygN6SBMdDS1GNuNYUZtAwG7uyMNRx6DjOXCk25baqT14aDU9N-wuR62Vsekx0IJyZ2bSbBMgcy4p9O-WUwUW2z8sQHTKLyQI69qSfm2mhjm8ypA5XdIGrdpS2y_XKQ2n5SbG336V9TSzc"/>
+</div>
+<div>
+<h4 class="font-bold">Need a custom setup?</h4>
+<p class="text-sm text-on-surface-variant mb-3">Speak with our accessibility concierge to perfectly tune your app experience.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">
+                    Start a Voice Session <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- NavigationDrawer Logic - Hidden state (Reference only for layout) -->
+<div class="hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-[60]">
+<aside class="w-80 h-full flex flex-col p-8 bg-[#f9f9f9] dark:bg-[#1b1b1b] rounded-r-[3rem] shadow-2xl">
+<!-- Navigation Drawer Content based on JSON -->
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img alt="User Portrait" data-alt="portrait of a professional man with a friendly expression in clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4NLbmZ5gdlKW2vXa_x4tKQJhatIxUyNQYMRWUEySnb8tlpTiKrvk3PcQzPH0LtZYSwJAreYICV-PjqLg2gc_CU9oG-xzRpECgGIhrHZno_bTrtm5d3PkOa709hUqHfRiQUw3dUiwjHvbJPdGOXWRscJgpgVpqyDM_7D4L3m1z0Tl5vA7JLuIH4gSrRn8bYm-oLxy1ip_ocHqJAPp5GSsRxE8DPXt8rpAECws9EA-NUlduC3cJmhRVKXgxj30oDLF-Cp0FH0KpSgI"/>
+</div>
+<div>
+<h2 class="font-['Plus_Jakarta_Sans'] text-base font-bold text-[#1b1b1b] dark:text-[#f9f9f9]">Alex Curator</h2>
+<p class="text-xs text-on-surface-variant">Premium Member</p>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-4 text-[#0047ab] font-bold bg-[#f3f3f3] dark:bg-[#252525] rounded-full px-4 py-3 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">settings_voice</span> Voice Settings
+                </a>
+<a class="flex items-center gap-4 text-[#434653] dark:text-[#a0a0a0] px-4 py-3 hover:bg-[#f3f3f3] dark:hover:bg-[#252525] rounded-full transition-all duration-200" href="#">
+<span class="material-symbols-outlined">payments</span> Payment Methods
+                </a>
+<a class="flex items-center gap-4 text-[#434653] dark:text-[#a0a0a0] px-4 py-3 hover:bg-[#f3f3f3] dark:hover:bg-[#252525] rounded-full transition-all duration-200" href="#">
+<span class="material-symbols-outlined">local_shipping</span> Shipping Address
+                </a>
+<div class="bg-[#f3f3f3] dark:bg-[#252525] h-px w-full my-4"></div>
+<a class="flex items-center gap-4 text-[#434653] dark:text-[#a0a0a0] px-4 py-3 hover:bg-[#f3f3f3] dark:hover:bg-[#252525] rounded-full transition-all duration-200" href="#">
+<span class="material-symbols-outlined">verified_user</span> Privacy Policy
+                </a>
+<a class="flex items-center gap-4 text-[#434653] dark:text-[#a0a0a0] px-4 py-3 hover:bg-[#f3f3f3] dark:hover:bg-[#252525] rounded-full transition-all duration-200" href="#">
+<span class="material-symbols-outlined">help</span> Help Center
+                </a>
+</nav>
+<div class="mt-auto text-[10px] text-on-surface-variant font-bold uppercase tracking-widest opacity-50">v1.0.4</div>
+</aside>
+</div>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#f9f9f9]/80 dark:bg-[#1b1b1b]/80 backdrop-blur-xl rounded-t-[3rem] shadow-[0px_-20px_40px_rgba(27,27,27,0.04)] border-t border-[#c3c6d5]/15">
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-[#a0a0a0] opacity-60 hover:opacity-100 transition-opacity active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">keyboard_voice</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-[#a0a0a0] opacity-60 hover:opacity-100 transition-opacity active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">local_mall</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-[#a0a0a0] opacity-60 hover:opacity-100 transition-opacity active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Profile</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full w-14 h-14 mb-2 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">settings</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B Mart - 주문 확인</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/IDDY-design/paperlogy-font@master/Paperlogy-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/IDDY-design/paperlogy-font@master/Paperlogy-Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/IDDY-design/paperlogy-font@master/Paperlogy-ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Paperlogy', 'Pretendard', sans-serif;
+            background-color: #f9f9f9;
+            color: #1b1b1b;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom spacing for asymmetrical layouts */
+        .asymmetric-gap {
+            margin-top: -2rem;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadada",
+              "inverse-surface": "#303030",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container": "#eeeeee",
+              "surface-tint": "#2559bd",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#e2dfde",
+              "secondary": "#5f5e5e",
+              "surface-bright": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#b1c5ff",
+              "primary": "#00327d",
+              "on-tertiary-fixed": "#380d00",
+              "on-error": "#ffffff",
+              "inverse-primary": "#b1c5ff",
+              "surface-container-highest": "#e2e2e2",
+              "outline-variant": "#c3c6d5",
+              "inverse-on-surface": "#f1f1f1",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1b1b1b",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#001946",
+              "surface-variant": "#e2e2e2",
+              "on-surface-variant": "#434653",
+              "primary-fixed": "#dae2ff",
+              "on-primary-container": "#a5bdff",
+              "tertiary-fixed": "#ffdbcf",
+              "tertiary-container": "#8b2e01",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "tertiary": "#651f00",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1c1b1b",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "on-tertiary-container": "#ffaa8a",
+              "on-primary-fixed-variant": "#00419e",
+              "background": "#f9f9f9",
+              "surface": "#f9f9f9",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-tertiary-fixed-variant": "#802900",
+              "on-error-container": "#93000a",
+              "on-background": "#1b1b1b",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Paperlogy", "Pretendard"],
+              "body": ["Paperlogy", "Pretendard"],
+              "label": ["Paperlogy", "Pretendard"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation -->
+<header class="docked full-width top-0 z-50 bg-[#f9f9f9] dark:bg-slate-950">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#0047ab] dark:text-blue-400">arrow_back</span>
+</button>
+<h1 class="text-2xl font-bold tracking-tighter text-[#1b1b1b] dark:text-white uppercase">B Mart</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="User Profile" data-alt="Close-up portrait of a friendly professional man in a clean studio setting with soft lighting and a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRXYKetQITBToUCLAcjIS6PaFRWl45u9FwNGjsgH-tGTJL0k7hvZIDZkIlQlXMuujmP9WwDHxsgjuTsL4LgVJqtStsGyzm-IA7t4UJ003DZzO_tHt-Y4jugkXj3h6HKk1Xu-nU3SbkjbxJb44TyaSvV3Wqln4mLedzdhQ9jvzgVc9NPBKzFPfowhivo55GpReXaY1Nw1GfvAf4yyp8dPInlfVjjuMvhKeHVyHtsZYvuvHAaPXLhVPBa6piySMZCn2vesS8lCoCwfg"/>
+</div>
+</div>
+</header>
+<main class="max-w-xl mx-auto px-6 pt-8 pb-32">
+<!-- AI Intentional Asymmetry Message -->
+<section class="mb-10 animate-fade-in">
+<div class="flex items-start gap-4 mb-2">
+<div class="bg-primary-container p-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex-1">
+<p class="text-[1.125rem] leading-relaxed font-medium text-on-surface-variant">
+                        이 상품이 가장 적합해요. 지금 주문하면 오늘 오후 7시 전에 도착 예정입니다.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Product Summary Card (Layered White) -->
+<div class="relative z-10 bg-surface-container-lowest rounded-xl p-8 mb-6 shadow-[0px_20px_40px_rgba(27,27,27,0.04)]">
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Image Section -->
+<div class="w-full md:w-40 h-40 rounded-lg overflow-hidden bg-surface-container-low flex-shrink-0">
+<img alt="Apple Mango" class="w-full h-full object-cover" data-alt="A single premium ripe Apple Mango with vibrant red and yellow skin, glistening with fresh water droplets on a clean white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpi2lCp9ZIIL3pK06I45pUONlIfLnUXJJ4Qq3ren1qoOPo4_QuJBcITLC4EjA47ptKoaqtoDtkBZ_rWjcfY8_KXgUPdRq8tHsfHdES0IzoiBk6zWLToqd-SQjG_dM3s8SpsH-ACrYSgCT2qPwGVQqmhUAGn-MmZevdBIQP4jMQ125kEHE3tKf5odheIQMFs4Tszrx8rYv-yW2nci87QlRfN2lILWhylSz_JkamoHZhwSraskKiN0HR4Zr9PSJgfxJvc3_IAwCKZbc"/>
+</div>
+<!-- Info Section -->
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-1">
+<img alt="B Mart" class="w-5 h-5 rounded-sm object-contain" data-alt="A minimalist professional logo for B Mart featuring clean geometric typography in dark navy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJgFYyFdpPPljbV_FLzUU0_f1r-y8eATpcviqUOe0G1UwycCTVqr6nkYaJNtDBAc5BMtSk3VlmLmkEGkOsfWdFeF3xlOzCi5n_rJUqdp6-_4R8KwPUuK1vL6UUuDh-McZAnSd_8SoZQXw8Xz-B542IbKDimNUlIQUCihz2iz6pdNlPQRiHf7_UigN159nS8XBmqyPwN1KcRYujkm9USHM17nzqwWjPrWT175fQd__f7s8-fwNQxbbPraut95dtnXnef8ergRjuMGg"/>
+<span class="text-label-md font-semibold text-on-surface-variant tracking-wider uppercase text-xs">B 마트 스토어</span>
+</div>
+<h2 class="text-2xl font-bold text-on-surface mb-2">애플망고</h2>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">inventory_2</span>
+<span>수량: 1개</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span>
+<span>4.9 (2천개 이상)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Details Grid (Bento Style) -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<!-- Delivery ETA Card -->
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary-container mb-3" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-1">예상 도착 시간</p>
+</div>
+<p class="text-lg font-bold text-on-surface">오늘 오후 6:40</p>
+</div>
+<!-- Payment Method Card -->
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary-container mb-3">credit_card</span>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-1">결제 수단</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-lg font-bold text-on-surface">현대카드</p>
+</div>
+</div>
+</div>
+<!-- Address Section (Subtle Separation) -->
+<div class="px-2 py-4 border-t border-outline-variant/15 flex justify-between items-center mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">location_on</span>
+<div>
+<p class="text-xs text-on-surface-variant font-semibold uppercase tracking-widest">우리집으로 배송</p>
+<p class="text-on-surface font-medium">서울특별시 강남구 테헤란로 123</p>
+</div>
+</div>
+<button class="text-primary-container font-bold text-sm hover:opacity-80 transition-opacity">변경</button>
+</div>
+<!-- Price Breakdown (Glassmorphic Tint) -->
+<div class="bg-surface-container-low rounded-lg p-8 mb-8">
+<div class="space-y-4">
+<div class="flex justify-between text-on-surface-variant">
+<span>상품 금액</span>
+<span>₩12,900</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>배송비</span>
+<span>₩2,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>AI 추천 할인</span>
+<span class="text-primary-container font-bold">- ₩1,000</span>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/30 flex justify-between items-baseline">
+<span class="text-xl font-bold">최종 결제 금액</span>
+<span class="text-3xl font-extrabold tracking-tighter text-on-surface">₩13,900</span>
+</div>
+</div>
+</div>
+<!-- Confirm and Pay CTA -->
+<button class="w-full bg-primary-container text-white py-6 rounded-full text-xl font-bold shadow-[0px_20px_40px_rgba(0,71,171,0.2)] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3">
+<span>결제하기</span>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<!-- Terms & Security (Small receded text) -->
+<p class="text-center text-[11px] text-on-surface-variant mt-8 px-8 leading-relaxed tracking-wider font-semibold opacity-60">
+            "결제하기"를 클릭하면 B 마트의 서비스 약관 및 개인정보 처리방침에 동의하는 것으로 간주됩니다. 모든 거래는 암호화되어 안전하게 보호됩니다.
+        </p>
+</main>
+<!-- Bottom Navigation Shell (Relevance Check: Top-level destinations) -->
+<!-- Suppressed on focused checkout journey as per "The Destination Rule" and "Relevance Check" -->
+<!-- Placeholder to ensure content doesn't get clipped -->
+<div class="h-24"></div>
+</body></html>

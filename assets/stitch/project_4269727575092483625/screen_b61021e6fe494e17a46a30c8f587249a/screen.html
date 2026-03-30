@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>프로필 및 설정 | B Mart AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Paperlogy-4Regular.woff2" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#dadada",
+                        "inverse-surface": "#303030",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container": "#eeeeee",
+                        "surface-tint": "#2559bd",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary-container": "#e2dfde",
+                        "secondary": "#5f5e5e",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "primary": "#00327d",
+                        "on-tertiary-fixed": "#380d00",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b1c5ff",
+                        "surface-container-highest": "#e2e2e2",
+                        "outline-variant": "#c3c6d5",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1b1b",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001946",
+                        "surface-variant": "#e2e2e2",
+                        "on-surface-variant": "#434653",
+                        "primary-fixed": "#dae2ff",
+                        "on-primary-container": "#a5bdff",
+                        "tertiary-fixed": "#ffdbcf",
+                        "tertiary-container": "#8b2e01",
+                        "primary-container": "#0047ab",
+                        "outline": "#737784",
+                        "tertiary": "#651f00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#636262",
+                        "on-tertiary-container": "#ffaa8a",
+                        "on-primary-fixed-variant": "#00419e",
+                        "background": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#802900",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1b1b1b",
+                        "error-container": "#ffdad6"
+                    },
+                    fontFamily: {
+                        "headline": ["Paperlogy", "sans-serif"],
+                        "body": ["Paperlogy", "sans-serif"],
+                        "label": ["Paperlogy", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Paperlogy-4Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Paperlogy-7Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        body { font-family: 'Paperlogy', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased mb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#f9f9f9] dark:bg-slate-950">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#0047ab] dark:text-blue-400">menu</span>
+<h1 class="text-2xl font-bold tracking-tighter text-[#1b1b1b] dark:text-white uppercase">B Mart</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden ring-2 ring-surface-container-high transition-opacity hover:opacity-80">
+<img alt="사용자 프로필" class="w-full h-full object-cover" data-alt="portrait of a professional woman with a friendly expression in a minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNZil3emTcIZw7dm_oJ-FzOpETWT2E5YlxkTcTHho0p4MYlX3ywGaqT6BDAs2tgxk6DPAJ_ZQqrD-Xg864E0JB8MX9-a5LwYn20Z9yscyqn3ohVMD_2y-aUf-R37d2sNeaRAhYNp-EN8f2G9sBsg0f76KX6zpQBRUe0t76P7IEDTRo6f0cLP-3lKTgK--10vjCjjfI-Fl2Dc5f1EEXsOziZudW8llADcxYHJgpk0L_wBdT0L8hO7pPa0UBw5At6JFnpN51_1oxsyw"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto space-y-12">
+<!-- Profile Hero Section -->
+<section class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+<div class="relative">
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-surface-container">
+<img alt="프로필 사진" class="w-full h-full object-cover" data-alt="close up portrait of a elegant woman looking at camera with a soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiNJ8ORk8bxggIIYVbqpArpSy_7tlKyzHb78TFKRSn4g7HuTLb3FZGjlXcBgdZqTzVKqvRJ4NTz6e-7uaAwWyhz43Wjfnuyr-AQJrB3zlipx5zFtu2r1j1aolCugoMyjNNSGMqY4i9wfUl3X67CqiQdEpPHimNskgv61zK_1BDGpONE2sfgnJcBXxrFMZzL24c8TmvnTVL0Cy4pxDU1tf03lMOmzJjKea_6Q7FGdz6Hn1ELbbJMPfePC1WzsU_VuZSCZD4wZXXAYU"/>
+</div>
+<button class="absolute bottom-1 right-1 bg-primary-container text-white p-3 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<div class="space-y-2">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface">엘레나 리처드슨</h2>
+<p class="text-on-surface-variant text-lg">2022년부터 프리미엄 회원 • 미국 샌프란시스코</p>
+<div class="flex gap-3 pt-2">
+<span class="px-4 py-1.5 bg-primary-container text-white rounded-full text-xs font-bold uppercase tracking-widest">플래티넘 등급</span>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface rounded-full text-xs font-bold uppercase tracking-widest">AI 얼리 액세스</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid Preferences -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- AI Concierge Voice Preferences -->
+<section class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">mic_none</span>
+<h3 class="text-xl font-bold">AI 어시스턴트 음성</h3>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed">디지털 큐레이터의 목소리를 맞춤 설정하세요. 현재 모든 대화에 "평온함"이 적용되어 있습니다.</p>
+<div class="flex flex-wrap gap-4">
+<button class="flex items-center gap-3 px-6 py-4 bg-on-surface text-surface rounded-full transition-all">
+<span class="material-symbols-outlined">check_circle</span>
+<span class="font-bold uppercase text-xs tracking-widest">평온함 (기본)</span>
+</button>
+<button class="flex items-center gap-3 px-6 py-4 bg-surface-container-highest text-on-surface rounded-full hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined">play_circle</span>
+<span class="font-bold uppercase text-xs tracking-widest">활기참</span>
+</button>
+<button class="flex items-center gap-3 px-6 py-4 bg-surface-container-highest text-on-surface rounded-full hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined">play_circle</span>
+<span class="font-bold uppercase text-xs tracking-widest">격식있음</span>
+</button>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/10 flex items-center justify-between">
+<span class="text-sm font-medium text-on-surface-variant">연속 듣기 모드</span>
+<div class="w-12 h-6 bg-primary-container rounded-full relative flex items-center px-1">
+<div class="w-4 h-4 bg-white rounded-full ml-auto"></div>
+</div>
+</div>
+</section>
+<!-- Notification Quick Toggle -->
+<section class="md:col-span-4 bg-primary-container text-white rounded-xl p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined mb-6 text-3xl" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+<h3 class="text-xl font-bold mb-2">실시간 알림</h3>
+<p class="text-primary-fixed-dim text-sm leading-relaxed">저장한 큐레이션 리스트의 가격이 하락하면 AI가 즉시 알려드립니다.</p>
+</div>
+<button class="w-full py-4 bg-white text-primary font-bold uppercase text-xs tracking-widest rounded-full mt-6">전체 설정 관리</button>
+</section>
+<!-- Delivery Address -->
+<section class="md:col-span-6 bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-8 space-y-6">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="text-xl font-bold">배송지 주소</h3>
+<p class="text-on-surface-variant text-sm">기본 배송지 설정</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">location_on</span>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg">
+<p class="font-bold text-lg">우리집</p>
+<p class="text-on-surface-variant leading-relaxed">2450 Taylor Street, Penthouse 4<br/>San Francisco, CA 94133</p>
+</div>
+<button class="text-primary-container font-bold text-sm uppercase tracking-widest hover:underline">주소 변경</button>
+</section>
+<!-- Payment Method -->
+<section class="md:col-span-6 bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-8 space-y-6">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="text-xl font-bold">결제 수단</h3>
+<p class="text-on-surface-variant text-sm">원클릭 AI 결제 활성화됨</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">payments</span>
+</div>
+<div class="p-6 bg-on-surface text-surface rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-8 bg-surface-container-highest rounded-md flex items-center justify-center text-on-surface font-black italic">VISA</div>
+<div>
+<p class="font-bold">•••• 8829</p>
+<p class="text-surface-dim text-xs">만료일 12/26</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-surface-dim">verified</span>
+</div>
+<button class="text-primary-container font-bold text-sm uppercase tracking-widest hover:underline">새 카드 추가</button>
+</section>
+</div>
+<!-- Privacy & Security -->
+<section class="bg-surface-container-low rounded-xl p-8 space-y-8">
+<h3 class="text-xl font-bold">보안 및 컨시어지 액세스</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">face</span>
+<span class="font-medium">결제 시 Face ID 사용</span>
+</div>
+<div class="w-10 h-5 bg-surface-container-highest rounded-full relative flex items-center px-1">
+<div class="w-3 h-3 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">history</span>
+<span class="font-medium">대화 기록 자동 삭제</span>
+</div>
+<div class="w-10 h-5 bg-primary-container rounded-full relative flex items-center px-1">
+<div class="w-3 h-3 bg-white rounded-full ml-auto"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Logout CTA -->
+<div class="flex justify-center py-12">
+<button class="px-12 py-5 bg-error-container text-on-error-container font-bold uppercase text-xs tracking-[0.2em] rounded-full hover:opacity-90 transition-opacity">
+            모든 기기에서 로그아웃
+        </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 rounded-t-[3rem] bg-[#f9f9f9]/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0px_-20px_40px_rgba(27,27,27,0.04)]">
+<div class="flex justify-around items-center px-8 pb-8 pt-4">
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined mb-1">shopping_bag</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">쇼핑</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined mb-1">mic_none</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">어시스턴트</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">주문 내역</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full p-3 min-w-[64px] transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">프로필</span>
+</a>
+</div>
+</nav>
+</body></html>

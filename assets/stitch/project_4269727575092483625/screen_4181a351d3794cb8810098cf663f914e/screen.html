@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Curator - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f9f9f9",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-fixed": "#ffdbcf",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-container": "#a5bdff",
+              "secondary": "#5f5e5e",
+              "on-background": "#1b1b1b",
+              "tertiary": "#651f00",
+              "on-primary-fixed-variant": "#00419e",
+              "primary-fixed": "#dae2ff",
+              "tertiary-container": "#8b2e01",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#802900",
+              "primary": "#00327d",
+              "on-surface-variant": "#434653",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-container": "#e2dfde",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#b1c5ff",
+              "on-surface": "#1b1b1b",
+              "surface-tint": "#2559bd",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffaa8a",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed": "#001946",
+              "inverse-surface": "#303030",
+              "outline-variant": "#c3c6d5",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474746",
+              "on-tertiary-fixed": "#380d00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .asymmetric-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Suppressing Global Nav for focused Onboarding context -->
+<main class="flex-grow flex flex-col px-6 pt-20 pb-12 max-w-5xl mx-auto w-full">
+<!-- Brand Header (Asymmetric Layout) -->
+<header class="mb-16">
+<h1 class="text-on-surface font-black text-4xl tracking-tighter mb-4">The Curator</h1>
+<p class="text-on-surface-variant text-xl max-w-md leading-relaxed">
+                Experience a more human way to shop. Just speak, and your digital concierge handles the rest.
+            </p>
+</header>
+<!-- Onboarding Interaction Visualization -->
+<div class="asymmetric-grid items-center mb-16">
+<!-- AI Interaction Card (Left/Main) -->
+<div class="bg-surface-container-low p-10 rounded-xl relative overflow-hidden flex flex-col gap-8">
+<!-- User Voice Input Bubble -->
+<div class="self-end max-w-[80%] bg-surface-container-lowest p-6 rounded-xl shadow-[0px_20px_40px_rgba(27,27,27,0.02)] border border-outline-variant/10">
+<p class="text-on-surface font-medium text-lg italic">“B마트에서 애플망고 사줘”</p>
+<div class="mt-4 flex items-center gap-2">
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+<span class="text-on-surface-variant text-xs uppercase tracking-widest font-bold">Voice Input Detected</span>
+</div>
+</div>
+<!-- AI Response Card -->
+<div class="self-start max-w-[85%] bg-primary-container text-white p-8 rounded-xl shadow-2xl flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<p class="font-bold text-lg">Curating your request...</p>
+</div>
+<div class="bg-white/10 rounded-lg p-4 flex gap-4 items-center border border-white/10">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up of a premium ripe apple mango with vibrant red and yellow skin on a clean minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtI1_zD5lKchsYLC1wlxM46UeAlX6oQQzd5WA-uyDAlo54s8VMI9fuOPP73d47POujv8CLAz50fsiVcCCQd-ydDPhv6K9-pUlB3yy_VOjABRODrlFpeiPW2vaCZs8-Ljaw7jX5dWvHsaKk_rzvmHITY7if6SUY3UjpSLNWNK2stYlxjTMqqjgwIG2bwjxMHRsWiiKUR9xDb3yyGGQbx9sifw7Oazj7TTqrj66IstRjK2k-za9cZzjSXEW5bolpKInJJ9-_S26jI7g"/>
+</div>
+<div>
+<p class="text-sm font-bold">Premium Apple Mango</p>
+<p class="text-xs opacity-70">B-Mart Special Selection</p>
+<p class="text-sm font-black mt-1">₩12,800</p>
+</div>
+</div>
+<p class="text-sm leading-relaxed opacity-90">
+                        I've found the freshest Apple Mangoes at B-Mart. Shall I proceed with your default shipping address?
+                    </p>
+</div>
+<!-- Decorative Pulse Element -->
+<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary-container/5 rounded-full blur-3xl"></div>
+</div>
+<!-- Features Bento (Right) -->
+<div class="flex flex-col gap-4">
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl">mic</span>
+<h3 class="font-bold text-lg">Natural Voice</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">No specific commands needed. Talk to me like you'd talk to a personal shopper.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/15 flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl">verified_user</span>
+<h3 class="font-bold text-lg">Secure Checkouts</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Your biometric signature confirms every curated purchase instantly.</p>
+</div>
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary-container text-3xl">auto_fix_high</span>
+<h3 class="font-bold text-lg">Smart Learning</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">I learn your brand preferences and dietary needs over time.</p>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<footer class="mt-auto flex flex-col md:flex-row items-center justify-between gap-8 pt-12">
+<div class="flex gap-2">
+<div class="w-8 h-1.5 rounded-full bg-primary-container"></div>
+<div class="w-2 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-2 h-1.5 rounded-full bg-outline-variant"></div>
+</div>
+<div class="flex items-center gap-6 w-full md:w-auto">
+<button class="text-on-surface-variant font-bold text-sm tracking-widest uppercase hover:text-on-surface transition-colors">Skip</button>
+<button class="flex-grow md:flex-none bg-primary-container text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:scale-95 duration-200">
+                    Get Started
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</footer>
+</main>
+<!-- Background Decoration -->
+<div class="fixed top-0 right-0 -z-10 w-1/3 h-full opacity-50">
+<div class="absolute top-1/4 right-0 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px]"></div>
+</div>
+</body></html>

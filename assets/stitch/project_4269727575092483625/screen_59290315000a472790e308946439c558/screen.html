@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Paperlogy-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paperlogy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Paperlogy-Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Paperlogy', 'Plus Jakarta Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #1b1b1b;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .voice-orb-glow {
+            box-shadow: 0 0 80px rgba(0, 71, 171, 0.15);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-dim": "#dadada",
+                "inverse-surface": "#303030",
+                "surface-container-high": "#e8e8e8",
+                "on-secondary-fixed-variant": "#474746",
+                "surface-container": "#eeeeee",
+                "surface-tint": "#0047ab",
+                "tertiary-fixed-dim": "#ffb59a",
+                "secondary-fixed": "#e5e2e1",
+                "surface-container-low": "#f3f3f3",
+                "secondary-container": "#e2dfde",
+                "secondary": "#5f5e5e",
+                "surface-bright": "#f9f9f9",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#b1c5ff",
+                "primary": "#0047ab",
+                "on-tertiary-fixed": "#380d00",
+                "on-error": "#ffffff",
+                "inverse-primary": "#b1c5ff",
+                "surface-container-highest": "#e2e2e2",
+                "outline-variant": "#c3c6d5",
+                "inverse-on-surface": "#f1f1f1",
+                "on-tertiary": "#ffffff",
+                "on-surface": "#1b1b1b",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed": "#001946",
+                "surface-variant": "#e2e2e2",
+                "on-surface-variant": "#434653",
+                "primary-fixed": "#dae2ff",
+                "on-primary-container": "#a5bdff",
+                "tertiary-fixed": "#ffdbcf",
+                "tertiary-container": "#8b2e01",
+                "primary-container": "#0047ab",
+                "outline": "#737784",
+                "tertiary": "#651f00",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#1c1b1b",
+                "error": "#ba1a1a",
+                "on-secondary-container": "#636262",
+                "on-tertiary-container": "#ffaa8a",
+                "on-primary-fixed-variant": "#00419e",
+                "background": "#f9f9f9",
+                "surface": "#f9f9f9",
+                "secondary-fixed-dim": "#c8c6c5",
+                "on-tertiary-fixed-variant": "#802900",
+                "on-error-container": "#93000a",
+                "on-background": "#1b1b1b",
+                "error-container": "#ffdad6"
+              },
+              fontFamily: {
+                "headline": ["Paperlogy", "Plus Jakarta Sans"],
+                "body": ["Paperlogy", "Plus Jakarta Sans"],
+                "label": ["Paperlogy", "Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 z-50 bg-[#f9f9f9]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#0047ab]">menu</span>
+<img alt="B Mart Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMoC9QI_OLpisexWO5eDDOcb973QfWLZiJbDw3ZrPpegRKE8ws9JhWsbq1wsSvmLqpm63RbFz4_PBC8P1zor-KjN0U9-84zZCYoeOeGhYoVTAe9aw4Tg8BXCiAhzll-kzC8L3H390fp-s_VZ-sTuh_1lTH9px4_aUyy_cpaPHDEC7wqLd9Q794ZXymfrFaOwhjMTSlOEWkxZX-Sm0segaP42tdQNHST-43i5opkjYozEsUQWzESPa_B8yVqB1RxwwmstSWof-wi3A"/>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/15">
+<img alt="사용자 프로필" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO3yRklsQ0AHadFRPcvgBu6WLWYeyfGGYiELZDHq54Rjt1JAziwfxX_7gEYTdTbRah1ABkryBmfTeGShKmU4hZj1NuPcsyvvd11DRKfdWeladYozk7k2jK0yPcan9ggBxJzDx_nqXxQQSqPhCsmmy26XmgPG6GtdZfHL7qd1kgH-9eilq0-wpCtumEviPI0MaAJZFftAP22Kb-1RIu3YaFz7zZxp0fG4OORAyzcVi0BRYKokRFn4odBHz-eflO6DWdwqf-O8j9Q6w"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center justify-center px-6 pb-32 pt-10 max-w-2xl mx-auto w-full space-y-12">
+<!-- Conversation Thread -->
+<section class="w-full space-y-8 mb-8">
+<!-- User Message -->
+<div class="flex justify-end ml-12">
+<div class="bg-surface-container-low px-6 py-4 rounded-t-xl rounded-bl-xl max-w-[85%]">
+<p class="text-on-surface text-lg leading-relaxed font-medium">
+                        "B마트에서 저번에 구매했던 애플망고 사줘."
+                    </p>
+</div>
+</div>
+<!-- AI Response -->
+<div class="flex justify-start mr-12">
+<div class="bg-surface-container-lowest px-6 py-5 rounded-t-xl rounded-br-xl shadow-sm border border-outline-variant/10 max-w-[90%]">
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        네, B마트에서 지난 3월 10일에 구매했던 <span class="text-primary-container font-bold">애플망고</span>를 확인했어요. 
+                        동일한 상품으로 주문을 진행할까요?
+                    </p>
+</div>
+</div>
+</section>
+<!-- Voice Interaction Orb -->
+<div class="relative flex flex-col items-center">
+<!-- Central Orb -->
+<div class="w-48 h-48 rounded-full bg-primary-container flex items-center justify-center voice-orb-glow relative z-10">
+<div class="w-40 h-40 rounded-full bg-white/10 flex items-center justify-center">
+<div class="w-32 h-32 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+</div>
+</div>
+<!-- Micro Status -->
+<div class="mt-8 text-center">
+<p class="text-primary-container font-semibold tracking-wide text-sm">애플망고 검색 완료</p>
+<div class="flex justify-center gap-1.5 mt-2">
+<div class="w-1.5 h-1.5 bg-primary-container rounded-full opacity-100"></div>
+<div class="w-1.5 h-1.5 bg-primary-container rounded-full opacity-60"></div>
+<div class="w-1.5 h-1.5 bg-primary-container rounded-full opacity-30"></div>
+</div>
+</div>
+</div>
+<!-- Product Summary Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-6 shadow-[0px_20px_40px_rgba(27,27,27,0.04)] border border-outline-variant/10">
+<div class="flex gap-6 items-center">
+<div class="w-24 h-24 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img alt="애플망고" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwLFp0LPkooQK0saH_ULPLXokH-YDKqRLPm1M8ACMFdIdXKJTOTRP2lmLs0CUcJObjr2m0nBzvxdPFTUzueFwN3FvYetc-rCe3BhoGrRkGbaHdDRKzEfZi9RnNR48Yh8fgDyNthtTaWlzFJtgRomtJYdF7IKqoC1EB_e2aXr6bzcHW3ZCT6PgMW469IpXc5AXuDmFujPzCb-q3ZPwqS9ZLIEpGgp9EYOAqbCgRFnHj_vYH-5jt1KEHxe3ZOVSY9Cux0PLOSbsRQ-c"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-on-surface font-bold text-xl">프리미엄 애플망고 2입</h3>
+<p class="text-on-surface-variant text-sm mt-1">32,900원 • 1개 수량</p>
+</div>
+<div class="bg-primary-container/10 text-primary-container text-[11px] font-bold px-3 py-1 rounded-full">
+                            활성 상태
+                        </div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<div class="w-2 h-2 bg-primary-container rounded-full animate-pulse"></div>
+<span class="text-primary-container font-bold text-sm">결제 진행 중</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#f9f9f9]/80 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0px_-20px_40px_rgba(27,27,27,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#434653] p-3 hover:text-[#1b1b1b] transition-opacity active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">shopping_bag</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">쇼핑</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full p-3 min-w-[64px] transition-all duration-300 active:scale-90 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">mic_none</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">어시스턴트</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] p-3 hover:text-[#1b1b1b] transition-opacity active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">주문내역</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#434653] p-3 hover:text-[#1b1b1b] transition-opacity active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="text-[11px] font-semibold uppercase tracking-widest">내 정보</span>
+</a>
+</nav>
+</body></html>

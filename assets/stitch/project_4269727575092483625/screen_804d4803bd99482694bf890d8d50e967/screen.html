@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B Mart - 대화 기록</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet"/>
+<!-- Paperlogy Font Replacement -->
+<link href="https://fastly.jsdelivr.net/gh/projectnoonnu/2408-1@1.0/Paperlogy-Regular.woff2" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Paperlogy-Regular', 'Pretendard', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadada",
+              "inverse-surface": "#303030",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container": "#eeeeee",
+              "surface-tint": "#2559bd",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#e2dfde",
+              "secondary": "#5f5e5e",
+              "surface-bright": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#b1c5ff",
+              "primary": "#00327d",
+              "on-tertiary-fixed": "#380d00",
+              "on-error": "#ffffff",
+              "inverse-primary": "#b1c5ff",
+              "surface-container-highest": "#e2e2e2",
+              "outline-variant": "#c3c6d5",
+              "inverse-on-surface": "#f1f1f1",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1b1b1b",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#001946",
+              "surface-variant": "#e2e2e2",
+              "on-surface-variant": "#434653",
+              "primary-fixed": "#dae2ff",
+              "on-primary-container": "#a5bdff",
+              "tertiary-fixed": "#ffdbcf",
+              "tertiary-container": "#8b2e01",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "tertiary": "#651f00",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1c1b1b",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "on-tertiary-container": "#ffaa8a",
+              "on-primary-fixed-variant": "#00419e",
+              "background": "#f9f9f9",
+              "surface": "#f9f9f9",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-tertiary-fixed-variant": "#802900",
+              "on-error-container": "#93000a",
+              "on-background": "#1b1b1b",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Paperlogy-Regular"],
+              "body": ["Paperlogy-Regular"],
+              "label": ["Paperlogy-Regular"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar Section -->
+<header class="bg-[#f9f9f9] dark:bg-slate-950 docked full-width top-0 z-50 flat no shadows border-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#0047ab] dark:text-blue-400 hover:opacity-80 transition-opacity active:scale-95 duration-200">menu</button>
+<h1 class="text-2xl font-bold tracking-tighter text-[#1b1b1b] dark:text-white uppercase font-headline">B Mart</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-['Paperlogy-Regular'] font-medium text-lg tracking-tight text-[#0047ab] dark:text-blue-400 hidden md:block">기록</span>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq202EL5oVl6u8RH_FzT7LqFV1L8WhuPmdiDM8cYoEjM75VQtlkms-R43JIOH78MRwd6fIzuDXBumQruvHydHInt60dX5QoAlWetV1XuBsmMR5PKvrf4rHEg38qb9K4z7xLHvyJeBuRi4tkPXU-gDxB4v0X_3s52gegngkOAT2Y1pr-QB_cfupMLVMd_ohtUdh_Fpb-y4xqK-kDH62hZY78O3sVMwFQiz3y4PRR6Lq3uDSrRfnNsYn3q3trn10vzLf-WuKkmZV-2U"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 pt-8 pb-32">
+<!-- Digital Curator Greeting -->
+<section class="mb-12">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight text-on-surface mb-2 font-headline">대화 기록</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-xl">
+            AI가 큐레이션한 과거 쇼핑 대화들입니다. 검토하거나, 재구매하거나, 중단했던 대화를 이어가보세요.
+        </p>
+</section>
+<!-- Search / Filter Area -->
+<div class="flex flex-wrap gap-3 mb-10">
+<button class="px-6 py-3 rounded-full bg-on-surface text-surface text-sm font-semibold tracking-tight transition-transform active:scale-95">모든 세션</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-semibold tracking-tight hover:bg-surface-container transition-colors active:scale-95">구매 완료</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-semibold tracking-tight hover:bg-surface-container transition-colors active:scale-95">단순 문의</button>
+</div>
+<!-- Conversational Log Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Item 1: Featured/Recent -->
+<div class="md:col-span-2 group">
+<div class="relative bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(27,27,27,0.02)] transition-all duration-300 hover:shadow-[0px_30px_60px_rgba(27,27,27,0.06)] cursor-pointer overflow-hidden">
+<div class="absolute top-0 right-0 p-6">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container/10 text-primary text-[10px] font-bold uppercase tracking-widest">최근 세션</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">mic_none</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface font-headline">애플망고 재구매</h3>
+<p class="text-on-surface-variant font-medium">2024년 3월 31일 • 14:20</p>
+</div>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl italic">
+                        "가장 신선한 제철 알폰소와 애플망고를 찾는 것을 도와드렸습니다. 3곳의 유기농 판매처를 비교하고 2.5kg 결제를 완료했습니다."
+                    </p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-bold text-on-surface uppercase tracking-wider">결제 성공</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group">
+<div class="bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] cursor-pointer h-full flex flex-col justify-between">
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-[0.2em] mb-4">2024년 3월 28일</p>
+<h3 class="text-xl font-bold tracking-tight text-on-surface mb-3 font-headline">주간 식료품 채우기</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        아몬드 우유, 유기농 오트밀, 콜드브루 원액 등 필수 품목을 정리했습니다. 총 12개 품목이 장바구니에 담겼습니다.
+                    </p>
+</div>
+<div class="mt-8 flex items-center gap-3">
+<div class="flex -space-x-3">
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
+<img alt="식료품" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASmCNuINnanc-9Z5a5XwtuK4LAYm-9vqPFg_iLZFGCD8ACEqgQR9jJbr00nrQULVMHNdKrLe5awVO74CEyRv2NWb-p4c9Y9cUEQls841o0GbwAbkhskAGZ91A_nMF8YcgjeTcoiLpI3h7AexmJii1pZMOYcx6DA0yBb-HAc7Hr7H0y5D6ZA8g0N68pb1vHyPSjiFuQPX8crSc-MNZ5DxKHNEjt1_OIseoEhC_YTqdfu5yEl9tPlLharngLiO-V_VuEBGmSfNTTqjU"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-slate-200 overflow-hidden">
+<img alt="마트" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvTRdkb4DVtD20QD6qFAXavWqb6JxsC-4Th1RaRkI4rP2z-UfL_8HNbQB9jtT0AY3QRoOhOK6ChN2NTmimFASpZiReJmHzEfgIFkraZAw2noYxoF5d6eQg_dN5TldEia_EIMGKVNFJJZ2YGVQ0_oitQAEUuazPYwkygK6VxJhW19V6K8VB9KqLYCLU4vxnSL09AVtavlc2Aey1qrAWxhMZivhuUDc8bitDB_dEhDHZT0iACwulWL9_KD01AcL5XbBn7SvwIbHHFNY"/>
+</div>
+</div>
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">나중에 구매하기</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group">
+<div class="bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] cursor-pointer h-full flex flex-col justify-between">
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-[0.2em] mb-4">2024년 3월 25일</p>
+<h3 class="text-xl font-bold tracking-tight text-on-surface mb-3 font-headline">이탈리안 디너 문의</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        정통 카르보나라 레시피 아이디어를 요청하셨습니다. 재고가 있는 관찰레와 페코리노 로마노 치즈를 찾아드렸습니다.
+                    </p>
+</div>
+<div class="mt-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#434653] scale-90">forum</span>
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">정보 세션</span>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="md:col-span-2 group">
+<div class="bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] cursor-pointer flex flex-col md:flex-row gap-8 items-start">
+<div class="flex-1">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-[0.2em] mb-4">2024년 3월 20일</p>
+<h3 class="text-xl font-bold tracking-tight text-on-surface mb-3 font-headline">지속 가능한 세정 키트</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-xl">
+                        친환경 세제와 생분해성 수세미로의 전면 교체를 도와드렸습니다. "사용 가능한 옵션 중 가장 환경을 생각하는 제품"을 요청하셨습니다.
+                    </p>
+<div class="mt-6 inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 text-xs font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm mr-2">eco</span>
+                        에코 컨셔스 선택
+                    </div>
+</div>
+<div class="w-full md:w-48 h-32 rounded-lg bg-surface-container-highest overflow-hidden">
+<img alt="에코 제품" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzsKpFhwICMe8UbASLA-KraA6-cYUpwsQ47XfS8DtB1P7dDSPNOWOhUOSU0dv4xtaRZyvb6bD37J3Zc2t2ATTXI4tzOtB0YNg-tXes5vsqUu6aX9bFc1SqM-h4di7_79g3vwkayXKZO-oe5Qz2NMlsB3E8dDnVjnkWCjvrQKKIljEI7ko5iV-mazjODnYpoSW1ZN-gaAy6QzZF1pC0bIKHOS2z8ufO3Vb4xmeTbFfu9iYcxZ4OldVfadTUOEPlktXUwon9IacC0cs"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-16 flex justify-center">
+<button class="flex items-center gap-2 text-on-surface-variant font-bold uppercase tracking-[0.3em] text-xs hover:text-on-surface transition-colors py-4 px-8 rounded-full border border-outline-variant/30">
+            이전 세션 더보기
+            <span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar Section -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#f9f9f9]/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0px_-20px_40px_rgba(27,27,27,0.04)] border-none">
+<div class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white transition-all">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<span class="font-['Paperlogy-Regular'] text-[11px] font-semibold uppercase tracking-widest mt-1">쇼핑</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full p-3 min-w-[64px] transition-all duration-300 scale-100 active:scale-90 ease-out">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">mic_none</span>
+<span class="font-['Paperlogy-Regular'] text-[11px] font-semibold uppercase tracking-widest mt-1">어시스턴트</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#0047ab] dark:text-blue-400 p-3 scale-100">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+<span class="font-['Paperlogy-Regular'] text-[11px] font-semibold uppercase tracking-widest mt-1">주문내역</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white transition-all">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="font-['Paperlogy-Regular'] text-[11px] font-semibold uppercase tracking-widest mt-1">프로필</span>
+</div>
+</nav>
+</body></html>

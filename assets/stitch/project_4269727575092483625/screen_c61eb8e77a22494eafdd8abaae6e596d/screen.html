@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>구매 내역 | B Mart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadada",
+              "inverse-surface": "#303030",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container": "#eeeeee",
+              "surface-tint": "#2559bd",
+              "tertiary-fixed-dim": "#ffb59a",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#e2dfde",
+              "secondary": "#5f5e5e",
+              "surface-bright": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#b1c5ff",
+              "primary": "#00327d",
+              "on-tertiary-fixed": "#380d00",
+              "on-error": "#ffffff",
+              "inverse-primary": "#b1c5ff",
+              "surface-container-highest": "#e2e2e2",
+              "outline-variant": "#c3c6d5",
+              "inverse-on-surface": "#f1f1f1",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1b1b1b",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#001946",
+              "surface-variant": "#e2e2e2",
+              "on-surface-variant": "#434653",
+              "primary-fixed": "#dae2ff",
+              "on-primary-container": "#a5bdff",
+              "tertiary-fixed": "#ffdbcf",
+              "tertiary-container": "#8b2e01",
+              "primary-container": "#0047ab",
+              "outline": "#737784",
+              "tertiary": "#651f00",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1c1b1b",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636262",
+              "on-tertiary-container": "#ffaa8a",
+              "on-primary-fixed-variant": "#00419e",
+              "background": "#f9f9f9",
+              "surface": "#f9f9f9",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-tertiary-fixed-variant": "#802900",
+              "on-error-container": "#93000a",
+              "on-background": "#1b1b1b",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Noto Sans KR"],
+              "body": ["Noto Sans KR"],
+              "label": ["Noto Sans KR"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom font override to approximate Paperlogy style with Noto Sans KR */
+        h1, h2, h3, h4, .font-headline { font-weight: 800; letter-spacing: -0.02em; }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar Shell -->
+<header class="bg-[#f9f9f9] dark:bg-slate-950 fixed top-0 z-50 w-full">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#0047ab] dark:text-blue-400 cursor-pointer" data-icon="menu">menu</span>
+<h1 class="text-2xl font-bold tracking-tighter text-[#1b1b1b] dark:text-white uppercase font-headline">B Mart</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden ring-2 ring-white ring-offset-2">
+<img alt="사용자 프로필" class="w-full h-full object-cover" data-alt="professional portrait of a smiling young man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzpejJl5gsXwIO8l6oC3sRVl0zpESryzOrch-x5vXRfBO34yEdWiHaBRvx-F97VuNKvZNWDNmZI76xegxmfegA46EeYaRMyzWZoLkr8awffhaVOc4hegY9avUglyiB1u8A15f542LgeNsQMiIFu0unPZFAFQ5oxPJiQw80yEY1TFMn29IVFAixU_UNGVT_OYI5dkNe30Cn4rwCwF69vpRUPWUCfVLu1UGlies5fDTaZ3BCuVXeUf0TzHqj899iCe1pegyv0v6P8F8"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto min-h-screen">
+<!-- Page Header -->
+<div class="mb-12 space-y-2">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface">주문 내역</h2>
+<p class="text-on-surface-variant text-lg">최근 구매하신 상품과 즐겨찾는 목록입니다.</p>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 mb-10 overflow-x-auto pb-2 no-scrollbar">
+<button class="px-6 py-2.5 rounded-full bg-on-surface text-surface font-semibold text-sm transition-transform active:scale-95">전체 내역</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">식료품</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">신선식품</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">간식/음료</button>
+</div>
+<!-- Purchase List -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Item 1: Featured/Recent (Mango) -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] group border border-outline-variant/10">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="w-48 h-48 bg-surface-container-low rounded-lg overflow-hidden shrink-0">
+<img alt="애플망고" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vibrant closeup of ripe organic mangoes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJyx1umH2u3zdhjCl0WjXibfbUBG5927NIAWzIw1v8KjCZgf4loTAtSjgpHh3tUUZWQW9vCV_Zvv7XRGZFp3c98tWt1faRE8V7WRmh3jGCnSBA2Ky7iG7jEa-U0pISSyxne0s1vZKgnYudHfhFQnrRDV4NRvrPo5FJcOMI9E3k2nYu1QZMcJIKJW4USaBIbv78l5L5QSCumMGiSy1mxkunmkCjMhd6zOQ5S-FYBaCxz_NprUXzbYj-hVm1IBAd97i1uc77vfDV8x0"/>
+</div>
+<div class="flex-1 space-y-4 text-center md:text-left">
+<div class="space-y-1">
+<span class="text-xs font-bold uppercase tracking-widest text-primary-container">최근 구매</span>
+<h3 class="text-2xl font-bold text-on-surface">프리미엄 수출용 애플망고</h3>
+<p class="text-on-surface-variant text-sm font-medium">배송 완료: 2023년 10월 24일</p>
+</div>
+<div class="text-3xl font-extrabold text-on-surface">12,500원</div>
+<div class="pt-4">
+<button class="bg-primary-container text-on-primary px-10 py-4 rounded-full font-bold text-sm tracking-wide transition-all active:scale-95 shadow-lg shadow-primary-container/20">재구매하기</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 (Replaced Shoes with Milk) -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10 hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] transition-all">
+<div class="space-y-6">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden">
+<img alt="신선한 우유" class="w-full h-full object-cover" data-alt="glass bottle of fresh milk on a wooden table with soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMNCS156oLIG5QPrTG2WjKutTZvSN4oDCP-hRq60Z4I4QswOfQ3aOo9SuVnATIoFya_hRWQYRHqnsw-c3tzNTd0sLnfy9GNt5qzjPF91s0JV8nQ8R1W6ZPSDb0eCFnuptIXX6dSuMt2lt6g5-SDz4VLqRxUI4Rhuxkq8a2LMvPDp6zC3gn41azM-27JcoL6oNuH7mUnHmU4UT0v0HaSnkHwdbM6iQJRKQPQaRGlv-_2ld93puXuTQtH1kyeh11GEer5CWb03EDpTo"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-lg font-bold text-on-surface">1등급 신선한 저지 우유 (1L)</h3>
+<p class="text-on-surface-variant text-sm">구매일: 2023년 10월 20일</p>
+</div>
+<div class="text-xl font-bold text-on-surface">3,900원</div>
+</div>
+<button class="mt-8 w-full py-4 border-2 border-primary-container text-primary-container rounded-full font-bold text-sm hover:bg-primary-container hover:text-white transition-all">재구매하기</button>
+</div>
+<!-- Item 3 (Replaced Chair with Eggs) -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10 hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] transition-all">
+<div class="space-y-6">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden">
+<img alt="무항생제 달걀" class="w-full h-full object-cover" data-alt="organic brown eggs in a carton on a rustic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzeIW0pjKTIJoeUyxq4Vwvk3Vj0JKuUr3sXueicOLi1yBXKdFvrYlsCCw6mFoOkIwxwXX6AWX3WjJqXB5gnRKT_IVXej6kVKDfMbcZxLPfcSqNAzOhSXZsRapEREm3aVRvv9il_V9uCbcy9jxVP-dAAUAQvz7X4sIRVhKfavYqJXcxppUgk7gcxTphdMUXiFiTr2sJkCFqGZHuXtMrx4Mll2foqymj4kFNZZ-kSMaISWWH67ibvFEr_x5l0qQdCLnil-e1eugZMWI"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-lg font-bold text-on-surface">무항생제 신선란 (15구)</h3>
+<p class="text-on-surface-variant text-sm">구매일: 2023년 10월 15일</p>
+</div>
+<div class="text-xl font-bold text-on-surface">8,500원</div>
+</div>
+<button class="mt-8 w-full py-4 border-2 border-primary-container text-primary-container rounded-full font-bold text-sm hover:bg-primary-container hover:text-white transition-all">재구매하기</button>
+</div>
+<!-- Item 4: Tonal Shift Section -->
+<div class="col-span-1 lg:col-span-2 bg-surface-container-low rounded-xl p-8 border border-outline-variant/5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-6">
+<div class="w-24 h-24 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary-container" data-icon="receipt_long">receipt_long</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-on-surface">주문에 도움이 필요하신가요?</h4>
+<p class="text-on-surface-variant">AI 비서가 반품이나 배송 조회를 도와드립니다.</p>
+</div>
+</div>
+<button class="bg-on-surface text-surface px-8 py-3 rounded-full font-bold text-sm whitespace-nowrap active:scale-95 transition-transform">상담 시작하기</button>
+</div>
+</div>
+<!-- Item 5 (Replaced Headphones with Snacks) -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10 hover:shadow-[0px_20px_40px_rgba(27,27,27,0.04)] transition-all">
+<div class="space-y-6">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden">
+<img alt="모듬 감자칩" class="w-full h-full object-cover" data-alt="bowl of various potato chips on a wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVaEDsxSMtbZAU6_iW5x5ZtSVi6vC-9tAL5kFJs8HAg2q7amsUHvcaq5QOtG7Bbv6PmuHBe4ehgHufoeIM_tZ7BFPHbhNKQ4qNsDDe0P9eYoldvAdnUI-arHyLDLBGY6nolf8K_8OzbNapBwslGika80w04Y752bjG4MzpNpqsUS4jE_JOLdPnJVvI4fB_iIxJz_J2IDvg9OjdPTWuA3gT--TP5DXwiYklMvT7UEBagImvV5gJmXZlKaJovM8MLOB6HLH0pVYeOQY"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-lg font-bold text-on-surface">바삭한 유기농 감자칩</h3>
+<p class="text-on-surface-variant text-sm">구매일: 2023년 10월 08일</p>
+</div>
+<div class="text-xl font-bold text-on-surface">2,500원</div>
+</div>
+<button class="mt-8 w-full py-4 border-2 border-primary-container text-primary-container rounded-full font-bold text-sm hover:bg-primary-container hover:text-white transition-all">재구매하기</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 rounded-t-[3rem] bg-[#f9f9f9]/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0px_-20px_40px_rgba(27,27,27,0.04)]">
+<div class="flex justify-around items-center px-8 pb-8 pt-4">
+<!-- Shop -->
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 duration-300" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">쇼핑</span>
+</a>
+<!-- Assistant -->
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 duration-300" data-icon="mic_none">mic_none</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">비서</span>
+</a>
+<!-- Orders (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-[#0047ab] text-white rounded-full p-3 min-w-[64px] transition-all duration-300 active:scale-90 shadow-lg shadow-primary-container/30" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="receipt_long">receipt_long</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">주문</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-[#434653] dark:text-slate-500 p-3 hover:text-[#1b1b1b] dark:hover:text-white group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 duration-300" data-icon="person">person</span>
+<span class="font-label text-[11px] font-semibold uppercase tracking-widest">프로필</span>
+</a>
+</div>
+</nav>
+</body></html>
